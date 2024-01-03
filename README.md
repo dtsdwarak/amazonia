@@ -2,7 +2,7 @@
 
 ## What?
 
-Webservice to return Amazon product information - designed to work with book URLs.
+Webservice to return Amazon.in product information - designed to work with book URLs.
 
 ___More To Be Updated Soon___
 
@@ -10,7 +10,7 @@ ___More To Be Updated Soon___
 
 ```bash
 $ go run main.go | tee logs
-$ curl 'http://localhost:8080/ping?requestURL=https://www.amazon.in/dp/B081HXR95C' | jq
+$ curl 'http://localhost:8080/product?requestURL=https://www.amazon.in/dp/B081HXR95C' | jq
 ```
 
 ## Thanks

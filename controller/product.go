@@ -63,10 +63,6 @@ func GetProductData(requestURL string) (model.Product, error) {
 			Author:      h.ChildText(".author > a:nth-child(1)"),
 			Description: h.ChildText("#bookDescription_feature_div > div:nth-child(1) > div:nth-child(1) > span:nth-child(1)"),
 			Rating:      h.ChildText("#averageCustomerReviews > span:nth-child(1) > span:nth-child(1) > span:nth-child(1) > a:nth-child(1) > i:nth-child(2) > span:nth-child(1)"),
-			Publisher:   h.ChildText("ul.a-vertical:nth-child(1) > li:nth-child(1) > span:nth-child(1) > span:nth-child(2)"),
-			Language:    h.ChildText("ul.a-vertical:nth-child(1) > li:nth-child(2) > span:nth-child(1) > span:nth-child(2)"),
-			ISBN10:      h.ChildText("ul.a-vertical:nth-child(1) > li:nth-child(4) > span:nth-child(1) > span:nth-child(2)"),
-			ISBN13:      h.ChildText("ul.a-vertical:nth-child(1) > li:nth-child(5) > span:nth-child(1) > span:nth-child(2)"),
 			URL:         h.Request.Ctx.Get("url"),
 		}
 	})

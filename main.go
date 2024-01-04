@@ -13,9 +13,8 @@ func main() {
 
 	r.GET("/product", func(c *gin.Context) {
 		requestURL := c.DefaultQuery("requestURL", "https://www.amazon.in/dp/9354353010/")
-		fmt.Println("input - " + requestURL)
+		fmt.Println("Input - " + requestURL)
 		product, _ := controller.GetProductData(requestURL)
-		// lastname := c.Query("lastname") // shortcut for c.Request.URL.Query().Get("lastname")
 		c.JSON(http.StatusOK, product)
 	})
 	r.Run() // listen and serve on 0.0.0.0:8080

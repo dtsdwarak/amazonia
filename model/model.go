@@ -7,8 +7,4 @@ type Product struct {
 	Rating      string
 	Images      []string
 	URL         string
-	Publisher   string
-	Language    string
-	ISBN10      string
-	ISBN13      string
 }

@@ -9,7 +9,7 @@ ___More To Be Updated Soon___
 ## Running
 
 ```bash
-$ go run main.go | tee logs
+$ make run
 $ curl 'http://localhost:8080/product?requestURL=https://www.amazon.in/dp/B081HXR95C' | jq
 ```
 

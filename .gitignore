@@ -233,4 +233,7 @@ $RECYCLE.BIN/
 # Cache directories
 *_cache/
 
+# Logs
+log*
+
 # End of https://www.toptal.com/developers/gitignore/api/macos,goland,go,visualstudiocode,linux,windows
